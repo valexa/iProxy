@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A18D6AE119DC7D400C56A7A /* AppTextFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18D6A8119DC7D400C56A7A /* AppTextFileResponse.m */; };
+		3A18D6AF119DC7D400C56A7A /* HTTPResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18D6AA119DC7D400C56A7A /* HTTPResponseHandler.m */; };
+		3A18D6B0119DC7D400C56A7A /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18D6AC119DC7D400C56A7A /* HTTPServer.m */; };
+		4A22E42F11F6D44500920369 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A22E42C11F6D44500920369 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4A22E43011F6D44500920369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A22E42D11F6D44500920369 /* Foundation.framework */; };
+		4A22E43111F6D44500920369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A22E42E11F6D44500920369 /* UIKit.framework */; };
+		4A22E43311F6D45C00920369 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A22E43211F6D45C00920369 /* CFNetwork.framework */; };
+		4ABB6AF1122BA008003CB67C /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB6AF0122BA008003CB67C /* mac.png */; };
+		9D5B3C5F1103D4E2003C8FCF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B3C5E1103D4E2003C8FCF /* Icon.png */; };
+		9D63172B10FEAC6C0041EE37 /* auth-pwd.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172110FEAC6C0041EE37 /* auth-pwd.c */; };
+		9D63172C10FEAC6C0041EE37 /* get-bind.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172210FEAC6C0041EE37 /* get-bind.c */; };
+		9D63172D10FEAC6C0041EE37 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172310FEAC6C0041EE37 /* init.c */; };
+		9D63172E10FEAC6C0041EE37 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172410FEAC6C0041EE37 /* main.c */; };
+		9D63172F10FEAC6C0041EE37 /* readconf.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172510FEAC6C0041EE37 /* readconf.c */; };
+		9D63173010FEAC6C0041EE37 /* relay.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172610FEAC6C0041EE37 /* relay.c */; };
+		9D63173110FEAC6C0041EE37 /* socks.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172710FEAC6C0041EE37 /* socks.c */; };
+		9D63173210FEAC6C0041EE37 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D63172910FEAC6C0041EE37 /* util.c */; };
+		9D63173810FEAC8B0041EE37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63173410FEAC8B0041EE37 /* AppDelegate.m */; };
+		9D63173910FEAC8B0041EE37 /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63173610FEAC8B0041EE37 /* StatusViewController.m */; };
+		9D63173C10FEAC980041EE37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63173A10FEAC980041EE37 /* main.m */; };
+		9D63174910FEACD30041EE37 /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D63174610FEACD30041EE37 /* StatusViewController.xib */; };
+		9D63174A10FEACD30041EE37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D63174710FEACD30041EE37 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6058910D05DD3D006BFB54 /* VAproxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAproxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18D6A7119DC7D400C56A7A /* AppTextFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppTextFileResponse.h; path = PACFileSources/AppTextFileResponse.h; sourceTree = "<group>"; };
+		3A18D6A8119DC7D400C56A7A /* AppTextFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppTextFileResponse.m; path = PACFileSources/AppTextFileResponse.m; sourceTree = "<group>"; };
+		3A18D6A9119DC7D400C56A7A /* HTTPResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseHandler.h; path = PACFileSources/HTTPResponseHandler.h; sourceTree = "<group>"; };
+		3A18D6AA119DC7D400C56A7A /* HTTPResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseHandler.m; path = PACFileSources/HTTPResponseHandler.m; sourceTree = "<group>"; };
+		3A18D6AB119DC7D400C56A7A /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = PACFileSources/HTTPServer.h; sourceTree = "<group>"; };
+		3A18D6AC119DC7D400C56A7A /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = PACFileSources/HTTPServer.m; sourceTree = "<group>"; };
+		3A18D6AD119DC7D400C56A7A /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = PACFileSources/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		4A22E42C11F6D44500920369 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4A22E42D11F6D44500920369 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A22E42E11F6D44500920369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A22E43211F6D45C00920369 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4ABB6AF0122BA008003CB67C /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mac.png; path = Resources/mac.png; sourceTree = "<group>"; };
+		9D5B3C5E1103D4E2003C8FCF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		9D63172110FEAC6C0041EE37 /* auth-pwd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "auth-pwd.c"; path = "Frameworks/srelay-0.4.7p3/auth-pwd.c"; sourceTree = "<group>"; };
+		9D63172210FEAC6C0041EE37 /* get-bind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "get-bind.c"; path = "Frameworks/srelay-0.4.7p3/get-bind.c"; sourceTree = "<group>"; };
+		9D63172310FEAC6C0041EE37 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = init.c; path = "Frameworks/srelay-0.4.7p3/init.c"; sourceTree = "<group>"; };
+		9D63172410FEAC6C0041EE37 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "Frameworks/srelay-0.4.7p3/main.c"; sourceTree = "<group>"; };
+		9D63172510FEAC6C0041EE37 /* readconf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readconf.c; path = "Frameworks/srelay-0.4.7p3/readconf.c"; sourceTree = "<group>"; };
+		9D63172610FEAC6C0041EE37 /* relay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = relay.c; path = "Frameworks/srelay-0.4.7p3/relay.c"; sourceTree = "<group>"; };
+		9D63172710FEAC6C0041EE37 /* socks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = socks.c; path = "Frameworks/srelay-0.4.7p3/socks.c"; sourceTree = "<group>"; };
+		9D63172810FEAC6C0041EE37 /* srelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srelay.h; path = "Frameworks/srelay-0.4.7p3/srelay.h"; sourceTree = "<group>"; };
+		9D63172910FEAC6C0041EE37 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = "Frameworks/srelay-0.4.7p3/util.c"; sourceTree = "<group>"; };
+		9D63172A10FEAC6C0041EE37 /* v6defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v6defs.h; path = "Frameworks/srelay-0.4.7p3/v6defs.h"; sourceTree = "<group>"; };
+		9D63173310FEAC8B0041EE37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = "<group>"; };
+		9D63173410FEAC8B0041EE37 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sources/AppDelegate.m; sourceTree = "<group>"; };
+		9D63173510FEAC8B0041EE37 /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusViewController.h; path = Sources/StatusViewController.h; sourceTree = "<group>"; };
+		9D63173610FEAC8B0041EE37 /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusViewController.m; path = Sources/StatusViewController.m; sourceTree = "<group>"; };
+		9D63173710FEAC8B0041EE37 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = route.h; path = Sources/route.h; sourceTree = "<group>"; };
+		9D63173A10FEAC980041EE37 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = "<group>"; };
+		9D63173B10FEAC980041EE37 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Sources/Prefix.pch; sourceTree = "<group>"; };
+		9D63174510FEACD30041EE37 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		9D63174610FEACD30041EE37 /* StatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StatusViewController.xib; path = Resources/StatusViewController.xib; sourceTree = "<group>"; };
+		9D63174710FEACD30041EE37 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A22E42F11F6D44500920369 /* CoreGraphics.framework in Frameworks */,
+				4A22E43011F6D44500920369 /* Foundation.framework in Frameworks */,
+				4A22E43111F6D44500920369 /* UIKit.framework in Frameworks */,
+				4A22E43311F6D45C00920369 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* VAproxy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3A18D67F119DC6F700C56A7A /* PACFileServer */,
+				9D63174410FEACBE0041EE37 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D63173A10FEAC980041EE37 /* main.m */,
+				9D63173710FEAC8B0041EE37 /* route.h */,
+				9D63173B10FEAC980041EE37 /* Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DE52B1A110E77920035266A /* Nibs */,
+				9D63174510FEACD30041EE37 /* Info.plist */,
+				4ABB6AF0122BA008003CB67C /* mac.png */,
+				9D5B3C5E1103D4E2003C8FCF /* Icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A22E43211F6D45C00920369 /* CFNetwork.framework */,
+				4A22E42C11F6D44500920369 /* CoreGraphics.framework */,
+				4A22E42D11F6D44500920369 /* Foundation.framework */,
+				4A22E42E11F6D44500920369 /* UIKit.framework */,
+				9DB69CEA10E3E6E6004C5F4C /* srelay */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A18D67F119DC6F700C56A7A /* PACFileServer */ = {
+			isa = PBXGroup;
+			children = (
+				3A18D6A7119DC7D400C56A7A /* AppTextFileResponse.h */,
+				3A18D6A8119DC7D400C56A7A /* AppTextFileResponse.m */,
+				3A18D6A9119DC7D400C56A7A /* HTTPResponseHandler.h */,
+				3A18D6AA119DC7D400C56A7A /* HTTPResponseHandler.m */,
+				3A18D6AB119DC7D400C56A7A /* HTTPServer.h */,
+				3A18D6AC119DC7D400C56A7A /* HTTPServer.m */,
+				3A18D6AD119DC7D400C56A7A /* SynthesizeSingleton.h */,
+			);
+			name = PACFileServer;
+			sourceTree = "<group>";
+		};
+		9D63174410FEACBE0041EE37 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D63173310FEAC8B0041EE37 /* AppDelegate.h */,
+				9D63173410FEAC8B0041EE37 /* AppDelegate.m */,
+				9D63173510FEAC8B0041EE37 /* StatusViewController.h */,
+				9D63173610FEAC8B0041EE37 /* StatusViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9DB69CEA10E3E6E6004C5F4C /* srelay */ = {
+			isa = PBXGroup;
+			children = (
+				9D63172110FEAC6C0041EE37 /* auth-pwd.c */,
+				9D63172210FEAC6C0041EE37 /* get-bind.c */,
+				9D63172310FEAC6C0041EE37 /* init.c */,
+				9D63172410FEAC6C0041EE37 /* main.c */,
+				9D63172510FEAC6C0041EE37 /* readconf.c */,
+				9D63172610FEAC6C0041EE37 /* relay.c */,
+				9D63172710FEAC6C0041EE37 /* socks.c */,
+				9D63172810FEAC6C0041EE37 /* srelay.h */,
+				9D63172910FEAC6C0041EE37 /* util.c */,
+				9D63172A10FEAC6C0041EE37 /* v6defs.h */,
+			);
+			name = srelay;
+			sourceTree = "<group>";
+		};
+		9DE52B1A110E77920035266A /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				9D63174610FEACD30041EE37 /* StatusViewController.xib */,
+				9D63174710FEACD30041EE37 /* MainWindow.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* VAproxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VAproxy" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9D2225261105EC06003F4E04 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VAproxy;
+			productName = VAproxy;
+			productReference = 1D6058910D05DD3D006BFB54 /* VAproxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VAproxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* VAproxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63174910FEACD30041EE37 /* StatusViewController.xib in Resources */,
+				9D63174A10FEACD30041EE37 /* MainWindow.xib in Resources */,
+				9D5B3C5F1103D4E2003C8FCF /* Icon.png in Resources */,
+				4ABB6AF1122BA008003CB67C /* mac.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D2225261105EC06003F4E04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROOT=`pwd`\nVERSION=`/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" Resources/Info.plist`\n\nrm -f $ROOT/build/$PRODUCT_NAME.zip\n\nif [ -f \"$ROOT/Distribution.mobileprovision\" ]; then\n  cp $ROOT/Distribution.mobileprovision $TARGET_BUILD_DIR\nfi\n\n/usr/bin/ditto -c -k --sequesterRsrc \"$TARGET_BUILD_DIR\" \"$ROOT/build/$PRODUCT_NAME-$VERSION.zip\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63172B10FEAC6C0041EE37 /* auth-pwd.c in Sources */,
+				9D63172C10FEAC6C0041EE37 /* get-bind.c in Sources */,
+				9D63172D10FEAC6C0041EE37 /* init.c in Sources */,
+				9D63172E10FEAC6C0041EE37 /* main.c in Sources */,
+				9D63172F10FEAC6C0041EE37 /* readconf.c in Sources */,
+				9D63173010FEAC6C0041EE37 /* relay.c in Sources */,
+				9D63173110FEAC6C0041EE37 /* socks.c in Sources */,
+				9D63173210FEAC6C0041EE37 /* util.c in Sources */,
+				9D63173810FEAC8B0041EE37 /* AppDelegate.m in Sources */,
+				9D63173910FEAC8B0041EE37 /* StatusViewController.m in Sources */,
+				9D63173C10FEAC980041EE37 /* main.m in Sources */,
+				3A18D6AE119DC7D400C56A7A /* AppTextFileResponse.m in Sources */,
+				3A18D6AF119DC7D400C56A7A /* HTTPResponseHandler.m in Sources */,
+				3A18D6B0119DC7D400C56A7A /* HTTPServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = VAproxy;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = VAproxy;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = Release;
+		};
+		9D2224DD1105E60B003F4E04 /* Ad-hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.1;
+			};
+			name = "Ad-hoc";
+		};
+		9D2224DE1105E60B003F4E04 /* Ad-hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = VAproxy;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = "Ad-hoc";
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VAproxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				9D2224DE1105E60B003F4E04 /* Ad-hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VAproxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				9D2224DD1105E60B003F4E04 /* Ad-hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
