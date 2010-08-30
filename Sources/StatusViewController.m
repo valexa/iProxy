@@ -15,24 +15,52 @@
  */
 
 #import "StatusViewController.h"
-#import "InstructionsViewController.h"
 
 @implementation StatusViewController
 
 @synthesize ipLabel;
 @synthesize portLabel;
+@synthesize theURL;
+@synthesize urlLabel;
 @synthesize uploadLabel;
 @synthesize downloadLabel;
 
+-(void)viewDidLoad{
+	titleLabel.text = @"iPad Configuration (flip for Mac):";
+	ipadView.frame = CGRectMake(9,240,300,142);		
+	[self.view addSubview:ipadView];	
+}
+
 - (IBAction)showInstructions
 {
-    InstructionsViewController *viewController = [[InstructionsViewController alloc] init];
-    UINavigationController *navigationConroller = [[UINavigationController alloc] initWithRootViewController:viewController];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://github.com/valexa/iProxy"]]; 
+}
 
-    [self presentModalViewController:navigationConroller animated:YES];
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return TRUE;
+}
 
-    [navigationConroller release];
-    [viewController release];
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+	UIInterfaceOrientation theInterfaceOrientation = [self interfaceOrientation];	
+	if (theInterfaceOrientation == UIInterfaceOrientationPortrait || theInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+		[macView removeFromSuperview];	
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationDuration:0.2];	
+		titleLabel.text = @"(flip device to see Mac configuration)";		
+		titleLabel.frame = CGRectMake(35,197,248,21);
+		ipadView.frame = CGRectMake(9,240,300,142);			
+		[self.view addSubview:ipadView];
+		[UIView commitAnimations];			
+	}else {
+		[ipadView removeFromSuperview];					
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationDuration:0.2];			
+		titleLabel.text = @"(flip device to see iPad configuration)";
+		titleLabel.frame = CGRectMake(116,133,248,21);		
+		macView.frame = CGRectMake(5,165,469,125);			
+		[self.view addSubview:macView];	
+		[UIView commitAnimations];				
+	}	
 }
 
 @end

@@ -20,13 +20,20 @@
 
     IBOutlet UILabel *ipLabel;
     IBOutlet UILabel *portLabel;
+    IBOutlet UILabel *urlLabel;	
+    IBOutlet UITextField *theURL;
     IBOutlet UILabel *uploadLabel;
     IBOutlet UILabel *downloadLabel;
+    IBOutlet UILabel *titleLabel;	
+	IBOutlet UIView *ipadView;
+    IBOutlet UIView *macView;
 
 }
 
 @property (nonatomic, retain) UILabel *ipLabel;
 @property (nonatomic, retain) UILabel *portLabel;
+@property (nonatomic, retain) UILabel *urlLabel;
+@property (nonatomic, retain) UITextField *theURL;
 @property (nonatomic, retain) UILabel *uploadLabel;
 @property (nonatomic, retain) UILabel *downloadLabel;
 

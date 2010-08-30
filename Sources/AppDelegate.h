@@ -30,6 +30,7 @@
 
 - (void)setUploadLabel:(NSNumber*)amount;
 - (void)setDownloadLabel:(NSNumber*)amount;
+-(NSString *)humanizeSize:(int)value;
 
 @end
 

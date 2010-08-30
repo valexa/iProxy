@@ -106,7 +106,8 @@ int local_main(int ac, char **av);
     }
     
     [AppTextFileResponse setIP:ip];
-    
+
+    //8888 hardcoded in AppTextFileResponse FindProxyForURL
     NSUInteger port = 8888;
 
     // NSLog(@"ip = %@", ip);
@@ -114,6 +115,8 @@ int local_main(int ac, char **av);
 
     statusViewController.ipLabel.text = ip;
     statusViewController.portLabel.text = [NSString stringWithFormat:@"%d", port];
+    statusViewController.theURL.text = [NSString stringWithFormat:@"http://%@:8080/socks.pac",ip];	
+    statusViewController.urlLabel.text = [NSString stringWithFormat:@"http://%@:8080/socks.pac",ip];		
     
     NSString *connect = [NSString stringWithFormat:@"%@:%d", ip, port];
 
@@ -142,12 +145,32 @@ int local_main(int ac, char **av);
 
 - (void)setUploadLabel:(NSNumber*)amount
 {
-    statusViewController.uploadLabel.text = [NSString stringWithFormat:@"%ld ↑", [amount longLongValue]];
+    statusViewController.uploadLabel.text = [NSString stringWithFormat:@"%@ ↑",[self humanizeSize:[amount intValue]]];
 }
 
 - (void)setDownloadLabel:(NSNumber*)amount
 {
-    statusViewController.downloadLabel.text = [NSString stringWithFormat:@"%ld ↓", [amount longLongValue]];
+    statusViewController.downloadLabel.text = [NSString stringWithFormat:@"%@ ↓",[self humanizeSize:[amount intValue]]];
 }
+
+-(NSString *)humanizeSize:(int)value{
+	NSString *sizeType = @"";		
+	
+	if (value  >= 1073741824)
+	{
+		value = value / 1073741824; sizeType = @"GB";
+	}
+	if (value >= 1048576)
+	{
+		value = value / 1048576; sizeType = @"MB";
+	}
+	if (value >= 1024)
+	{
+		value = value / 1024; sizeType = @"KB";
+	}
+	
+	return [NSString stringWithFormat:@"%i %@",value,sizeType];
+}
+
 
 @end
